@@ -1,1 +1,2 @@
 A compilation of LeetCode problem I solved, the rules being : no AI help or code made by others, I can only check documentations or explanations.
+All file are named after the problem name, with "." being traded for "-", and the first line of the file being the link to the problem's description.
