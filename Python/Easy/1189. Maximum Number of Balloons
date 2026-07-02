@@ -1,0 +1,14 @@
+https://leetcode.com/problems/maximum-number-of-balloons/description/
+
+class Solution:
+    def maxNumberOfBalloons(self, text: str) -> int:
+        letter_count = {letter : 0 for letter in "balon"}
+        for letter in text:
+            if letter in {"b", "a", "l", "o", "n"}:
+                letter_count[letter] += 1
+        
+        return min(letter_count["b"],
+                    letter_count["a"],
+                    letter_count["l"] // 2,
+                    letter_count["o"] // 2,
+                    letter_count["n"])
