@@ -40,3 +40,5 @@ ON c.request_at = v.request_at
 --Which, after a bit of seaching why this is even allowed, can be reduced further to ROUND(SUM(status!='cancelled_by_driver' OR status='cancelled_by_client') / COUNT(request_at),2)
 --as boolean are enough since MySQL and SQLite don't use a strict type checking as every other relational database engine does.
 --On a side note, in this case ROUND(SUM(status != 'completed') / COUNT(request_at), 2) would be even better
+
+-- cf Database Quest P4 Q1
